@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Poppins:ital,wght@0,100;0,400;0,700;1,100&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,400&display=swap");
+
+:root {
+  font-family: "Poppins", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+* {
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.app {
+  height: 100dvh;
+  overflow-x: hidden;
+}
+
+.sections {
+  height: calc(100dvh - 5rem);
+  width: 100%;
+  background-color: red;
+  position: relative;
+  top: 5rem;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  overflow: scroll;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  > * {
+    height: 100%;
+    width: 100%;
+    scroll-snap-align: start;
+  }
+}
