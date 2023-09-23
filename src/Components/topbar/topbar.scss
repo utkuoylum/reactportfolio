@@ -9,6 +9,8 @@
   top: 0;
   z-index: 3;
   transition: 0.8s ease-out;
+  // -webkit-box-shadow: 0px 15px 17px -1px rgba(0, 0, 0, 0.48);
+  // box-shadow: 0px 15px 17px -1px rgba(0, 0, 0, 0.48);
 
   .wrapper {
     padding: 10px 30px;
@@ -25,7 +27,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: lightcoral;
         border-radius: 10px;
         position: relative;
       }
@@ -65,8 +66,7 @@
   &.active {
     background-color: $mainColor;
     color: white;
-    -webkit-box-shadow: 0px 15px 17px -1px rgba(0, 0, 0, 0.48);
-    box-shadow: 0px 15px 17px -1px rgba(0, 0, 0, 0.48);
+ 
 
     .hamburger {
       position: relative;

@@ -1,3 +1,83 @@
+@import "../../global.scss";
+
 .intro {
-    background-color: lightgreen;
+    background-color: white;
+    display: flex;
+
+    .left {
+        flex:0.5;
+        overflow: hidden;
+        .blank {
+            height: 0.5rem;
+           }
+        .imgContainer {
+           background: linear-gradient(90deg,rgb(234, 91, 19) 0%, rgb(233, 140, 74) 60%, rgb(255, 255, 255 )100%);
+           border-radius: 50%;
+           display: flex;
+           justify-content: center;
+           align-items: flex-start;
+           float: right;
+           width: 54rem;
+           height: 54rem;
+           
+           
+
+            img {
+               height: 46rem;
+            }
+        }
+    }
+    .right {
+        width: 100%;
+        flex: 0.5;
+        position: relative;
+
+        .wrapper {
+            width: 100%;
+            height: 100%;
+            padding-left: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1 {
+                font-size: 3.5rem;
+                margin: 10px 0;
+            }
+            h2{ 
+                font-size: 2.7rem;
+                background: linear-gradient(90deg, $mainColor 0%, rgb(229, 4, 52) 100%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            h3{
+                font-size: 30px;
+
+                span {
+                    font-size: inherit;
+                    background: linear-gradient(90deg, $mainColor 0%, rgb(229, 4, 52) 100%);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+        }
+        a{
+            position: absolute;
+            bottom: 10px;
+            left: 40%;
+
+            img{
+                width: 30px;
+                animation: arrowBlink 2s infinite;
+            }
+            @keyframes arrowBlink {
+                to {
+                    opacity: 0;
+                }
+             }
+        }
+        
+    }
 }
