@@ -35,7 +35,8 @@
         font-size: 40px;
         font-weight: 700;
         text-decoration: none;
-        color: inherit;
+        color: black;
+        transition: 0.5s;
       }
       .icon {
         padding: 1rem;
@@ -66,8 +67,15 @@
   &.active {
     background-color: $mainColor;
     color: white;
+    .wrapper  {
+      .left {
+        .logo{
+          color: white;
+        }
+      }
+    }
  
-
+  
     .hamburger {
       position: relative;
       .menubar {

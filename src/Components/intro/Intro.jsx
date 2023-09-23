@@ -10,7 +10,7 @@ export default function Intro() {
       showCursor: false,
       backDelay: 1500,
       backSpeed: 40,
-      strings: ["Javascript","React", "Css","Wordpress"],
+      strings: ["Javascript","React", "Css","Wordpress", "and... LOVE❤️"],
     });
   }, []);
 
