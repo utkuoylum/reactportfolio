@@ -37,7 +37,7 @@ export default function Works() {
     },
     {
       id: "4",
-      icon: "/assets/writing.png",
+      icon: "/assets/cat.png",
       title: "AI Image Generator",
       desc:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
