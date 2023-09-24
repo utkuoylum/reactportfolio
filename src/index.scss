@@ -13,24 +13,10 @@
   margin: 0;
   text-decoration: none;
   list-style: none;
+  scroll-behavior: smooth;
 }
 
 .app {
   height: 100dvh;
   overflow: hidden;
-}
-
-.sections {
-  height: calc(100dvh - 5rem);
-  width: 100%;
-  background-color: white;
-  position: relative;
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-  overflow: hidden;
-  text-align: center;
-  > * {
-    height: 100%;
-    width: 100%;
-  }
 }
