@@ -8,29 +8,32 @@ export default function Works() {
     {
       id: "1",
       icon: "/assets/mobile.png",
-      title: "Web Design",
+      title: "Grocery App",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
+        "Grocery App built with React and API. Storefront and cart features. Stripe checkout authentication coming soon. ",
+        url: "https://grocery-app-utku.netlify.app/",
       img:
-        "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930",
+        "/assets/grocery.png",
     },
     {
       id: "2",
       icon: "/assets/globe.png",
-      title: "Mobile Application",
+      title: "My Bank App",
       desc:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        url: "https://mybankappp.netlify.app/",
       img:
-        "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
+        "/assets/mybank.png",
     },
     {
       id: "3",
       icon: "/assets/writing.png",
-      title: "Branding",
+      title: "Personal Website",
       desc:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        url: "https://utkuoylum.netlify.app/",
       img:
-        "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+        "/assets/personal.png",
     },
   ];
 
@@ -52,7 +55,7 @@ export default function Works() {
                 </div>
                 <h2>{item.title}</h2>
                 <p>{item.desc}</p>
-                <span>See Online</span>
+                <a href={item.url} target="_blank" rel="noreferrer">See Online</a> 
               </div>
             </div>
             <div className="right">
