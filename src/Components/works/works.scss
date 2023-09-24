@@ -1,20 +1,28 @@
 @import "../../global.scss";
 
 .works {
-    background-color: $mainColor;
+  
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     height: calc(100dvh - 5rem);
 
+
+    h1 {
+        font-size: 3rem;
+        z-index: 100;
+        position: absolute;
+        top: 2rem;
+        color: $mainColor
+    }
+
     .arrow {
-        height: 60px;
+        font-size: 4rem;
         position: absolute;
 
         &.left{
             left: 100px;
-            transform: rotateY(180deg);
             cursor: pointer;
         }
         &.right {
@@ -25,7 +33,7 @@
     }
 
     .slider {
-        height: 350px;
+        height: 24rem;
         display: flex;
         position: absolute;
         left: 0;
@@ -35,15 +43,24 @@
             align-items: center;
             display: flex;
             justify-content: center;
+            flex-direction: column;
+            gap: 2rem;
+
+            .number {
+                font-weight: 500;
+            }
         }
         .item {
-            width: 700px;
+            width: 50rem;
             height: 100%;
             background-color: white;
             border-radius: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
+           
+            -webkit-box-shadow: -7px 8px 14px 2px rgba(0,0,0,0.65); 
+            box-shadow: -7px 8px 14px 2px rgba(0,0,0,0.65);
 
             .left {
                 flex: 4;
@@ -54,10 +71,11 @@
 
                 .leftContainer {
                     width: 90%;
-                    height: 70%;
+                    height: 80%;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
+                 
 
                     .imgContainer {
                         width: 40px;
@@ -80,10 +98,20 @@
                         font-size: 13px;
                     }
                     span {
-                        font-size: 12px;
+                        font-size: 1.2rem;
                         font-weight: 600;
-                        text-decoration: underline;
                         cursor: pointer;
+                        border: 2px solid $mainColor;
+                        border-radius: 10px;
+                        width: max-content;
+                        padding: 0.3rem;
+                        align-self: center;
+                        transition: 0.3s;
+
+                        &:hover {
+                            background-color: $mainColor;
+                        }
+                
                     }
 
                 }

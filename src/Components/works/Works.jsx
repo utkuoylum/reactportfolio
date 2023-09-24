@@ -40,7 +40,9 @@ export default function Works() {
 
   return (
     <div className="works" id="works">
+      <h1>Portfolio</h1>
       <div className="slider" style={{transform:`translateX(-${currentSlide * 100}vw)`}}>
+      
        {data.map(item => (<div className="container" key={item.id}>
           <div className="item">
             <div className="left">
@@ -50,17 +52,21 @@ export default function Works() {
                 </div>
                 <h2>{item.title}</h2>
                 <p>{item.desc}</p>
-                <span>Projects</span>
+                <span>Try Online</span>
               </div>
             </div>
             <div className="right">
               <img src={item.img} alt="" />
             </div>
           </div>
+          <p className="number">{`${item.id} of ${data.length} projects`}</p>
         </div>))}
+        
       </div>
-      <img src="/assets/arrow.png" className="arrow left" alt="" onClick={()=>handleClick("left")} />
-      <img src="/assets/arrow.png" className="arrow right" alt="" onClick={()=>handleClick("")}/>
+      <i className='bx bxs-chevron-left-square arrow left' onClick={()=>handleClick("left")}></i>
+      <i className='bx bxs-chevron-right-square arrow right' onClick={()=>handleClick("")}></i>
+      
+   
 
     </div>
   )

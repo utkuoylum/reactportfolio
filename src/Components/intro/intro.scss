@@ -29,16 +29,16 @@
         overflow: hidden;
         .imgContainer {
            background: linear-gradient(90deg,rgb(234, 91, 19) 0%, rgb(233, 140, 74) 60%, rgb(255, 255, 255 )100%);
-           border-radius: 50%;
+           border-radius: 72% 28% 83% 17% / 81% 53% 47% 19%   ;
            display: flex;
            justify-content: center;
            align-items: flex-end;
            float: right;
            width: 54rem;
-           height: 54rem;
+           height: 100%;
             img {
-               height: 52rem;
-               margin-bottom: 6rem;
+               height: 100%;
+               
             }
         }
     }
