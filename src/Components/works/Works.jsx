@@ -20,7 +20,7 @@ export default function Works() {
       icon: "/assets/globe.png",
       title: "My Bank App",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "A bank application with only front-end side elements.",
         url: "https://mybankappp.netlify.app/",
       img:
         "/assets/mybank.png",
@@ -30,7 +30,7 @@ export default function Works() {
       icon: "/assets/writing.png",
       title: "Personal Website",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "A personal website for professionals made with pure JavaScript and CSS.",
         url: "https://utkuoylum.netlify.app/",
       img:
         "/assets/personal.png",
@@ -40,15 +40,25 @@ export default function Works() {
       icon: "/assets/cat.png",
       title: "AI Image Generator",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "A Basic AI supported Image Generator. Just enter some prompts and images will be generated.",
         url: "https://ai-image-generator-site.netlify.app/",
       img:
         "/assets/aiimage.png",
+    },
+    {
+      id: "5",
+      icon: "/assets/drumicon.png",
+      title: "Keyboard Band",
+      desc:
+        "Who would not like to play some drums with keyboard?",
+        url: "https://drumkitplayapp.netlify.app/",
+      img:
+        "/assets/band.png",
     }
   ];
 
   const handleClick = (way)=>{
-    way === "left" ? setCurrentSlide(currentSlide > 0 ? currentSlide-1 : 2) : setCurrentSlide(currentSlide === data.length-1 ? 0 : currentSlide + 1)
+    way === "left" ? setCurrentSlide(currentSlide > 0 ? currentSlide-1 : data.length-1) : setCurrentSlide(currentSlide === data.length-1 ? 0 : currentSlide + 1)
   }
 
   return (
