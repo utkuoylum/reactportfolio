@@ -3,27 +3,42 @@
 .intro {
     background-color: white;
     display: flex;
+    position: relative;
+    height: calc(100dvh - 5rem);
 
+    .cv {
+        position: absolute;
+        bottom: 1rem;
+        right: 2rem;
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+        color: black;
+        background-color: crimson;
+        border-radius: 1rem;
+        padding: 1rem;
+        background: linear-gradient(90deg, $mainColor 0%, rgb(244, 72, 9) 100%);
+        opacity: 0.9;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
     .left {
         flex:0.5;
         overflow: hidden;
-        .blank {
-            height: 0.5rem;
-           }
         .imgContainer {
            background: linear-gradient(90deg,rgb(234, 91, 19) 0%, rgb(233, 140, 74) 60%, rgb(255, 255, 255 )100%);
            border-radius: 50%;
            display: flex;
            justify-content: center;
-           align-items: flex-start;
+           align-items: flex-end;
            float: right;
            width: 54rem;
            height: 54rem;
-           
-           
-
             img {
-               height: 46rem;
+               height: 52rem;
+               margin-bottom: 6rem;
             }
         }
     }
@@ -46,7 +61,7 @@
             }
             h2{ 
                 font-size: 2.7rem;
-                background: linear-gradient(90deg, $mainColor 0%, rgb(229, 4, 52) 100%);
+                background: linear-gradient(90deg, $mainColor 0%, rgb(229, 4, 52) 60%, rgb(118, 1, 1) 100%);
                 background-clip: text;
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
@@ -69,7 +84,7 @@
             left: 40%;
 
             img{
-                width: 30px;
+                width: 2.4rem;
                 animation: arrowBlink 2s infinite;
             }
             @keyframes arrowBlink {

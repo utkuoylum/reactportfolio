@@ -9,6 +9,7 @@
   -webkit-text-size-adjust: 100%;
 }
 * {
+  box-sizing: border-box;
   margin: 0;
   text-decoration: none;
   list-style: none;
@@ -16,7 +17,7 @@
 
 .app {
   height: 100dvh;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .sections {
@@ -24,18 +25,12 @@
   width: 100%;
   background-color: white;
   position: relative;
-  top: 5rem;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
-  overflow: scroll;
-  scrollbar-width: none;
-  &::-webkit-scrollbar {
-    display: none;
-  }
-
+  overflow: hidden;
+  text-align: center;
   > * {
     height: 100%;
     width: 100%;
-    scroll-snap-align: start;
   }
 }

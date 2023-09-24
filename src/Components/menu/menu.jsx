@@ -19,9 +19,6 @@ export default function Menu(props) {
                 <a href="#works">Works</a>
             </li>
             <li onClick={props.handleMenu}>
-                <a href="#testimonials">Testimonials</a>
-            </li>
-            <li onClick={props.handleMenu}>
                 <a href="#contact">Contact</a>
             </li>
         </ul>

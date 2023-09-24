@@ -5,6 +5,7 @@ import Works from "./Components/works/Works";
 import Contact from "./Components/contact/Contact";
 import Menu from "./Components/menu/menu";
 import { useState } from "react";
+import {BrowserRouter,Routes,Route} from "react-router-dom"
 
 function App() {
   const [menuActive, setMenuActive] = useState(false);
@@ -13,17 +14,17 @@ function App() {
     setMenuActive(!menuActive);
   };
 
-  return (
+  return (<BrowserRouter>
     <div className="app">
       <Topbar menuActive={menuActive} handleMenu={handleMenuActive} />
-      <Menu menuActive={menuActive} handleMenu={handleMenuActive} />
-      <div className="sections">
-        <Intro />
-        <Portfolio />
-        <Works />
-        <Contact />
-      </div>
-    </div>
+      {/* <Menu menuActive={menuActive} handleMenu={handleMenuActive} /> */}
+      <Routes>
+        <Route path="/" element={<Intro />}></Route>
+        <Route path="/portfolio" element={<Portfolio />}></Route>
+        <Route path="/works" element={<Works />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
+      </Routes>
+    </div></BrowserRouter>
   );
 }
 

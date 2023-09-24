@@ -1,9 +1,12 @@
+@import "../../global.scss";
+
 .works {
-    background-color: crimson;
+    background-color: $mainColor;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    height: calc(100dvh - 5rem);
 
     .arrow {
         height: 60px;

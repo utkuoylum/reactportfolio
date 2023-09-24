@@ -10,15 +10,13 @@ export default function Intro() {
       showCursor: false,
       backDelay: 1500,
       backSpeed: 40,
-      strings: ["Javascript","React", "Css","Wordpress", "and... LOVE❤️"],
+      strings: ["Javascript","React", "Css","Wordpress", "... LOVE ❤️"],
     });
   }, []);
 
   return (
     <div className="intro" id="intro">
       <div className="left">
-        <div className="blank">
-        </div>
         <div className="imgContainer">
           <img src="./src/assets/nobgpp.png" alt="utku avatar" />
         </div>
@@ -31,10 +29,8 @@ export default function Intro() {
             I create with <span ref={textRef}></span>
           </h3>
         </div>
-        <a href="#portfolio">
-          <img src="./src/assets/down.png" alt="down arrow" />
-        </a>
       </div>
+      <a href="https://drive.google.com/file/d/1Tz5KrFpk1RpWKrpWbhkHDd7MciUVWevl/view?usp=drive_link" target="_blank" className="cv"><i className='bx bxs-download'></i>Download My Cv</a>
     </div>
   );
 }

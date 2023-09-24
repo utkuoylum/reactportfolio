@@ -1,5 +1,8 @@
+@import "../../global.scss";
+
 .contact {
     display: flex;
+    height: calc(100dvh - 5rem);
  
 
     .left {
@@ -44,7 +47,7 @@
                 width: 150px;
                 height: 30px;
                 color: white;
-                background-color: crimson;
+                background-color: $mainColor;
                 border: none;
                 border-radius: 10px;
                 font-weight: 500;
