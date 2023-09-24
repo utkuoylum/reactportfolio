@@ -5,7 +5,7 @@ export default function Topbar() {
 
   return (
     <div className="topbar" id="topbar">
-      <a href="#intro" className="logo">oylum.</a>
+      <a href="/" className="logo">oylum.</a>
      
           <div className="navItems">
             <NavLink to="/" className={({isActive})=>isActive ? "selected": ""}>home</NavLink>
