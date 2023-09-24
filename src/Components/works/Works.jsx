@@ -35,10 +35,20 @@ export default function Works() {
       img:
         "/assets/personal.png",
     },
+    {
+      id: "4",
+      icon: "/assets/writing.png",
+      title: "AI Image Generator",
+      desc:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        url: "https://ai-image-generator-site.netlify.app/",
+      img:
+        "/assets/aiimage.png",
+    }
   ];
 
   const handleClick = (way)=>{
-    way === "left" ? setCurrentSlide(currentSlide > 0 ? currentSlide-1 : 2) : setCurrentSlide(currentSlide === 2 ? 0 : currentSlide + 1)
+    way === "left" ? setCurrentSlide(currentSlide > 0 ? currentSlide-1 : 2) : setCurrentSlide(currentSlide === data.length-1 ? 0 : currentSlide + 1)
   }
 
   return (
