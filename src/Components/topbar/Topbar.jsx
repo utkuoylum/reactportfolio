@@ -20,12 +20,17 @@ export default function Topbar(props) {
             <NavLink to="/contact" className={({isActive})=>isActive ? "selected": ""}>contact</NavLink>
           </div>
        
-          <div className="hamburger" onClick={handleMenu}>
+          {/* <div className="hamburger" onClick={handleMenu}>
           <span className="menubar"></span>
           <span className="menubar"></span>
           <span className="menubar"></span>
-          </div>
+          </div> */}
+        
       </div>
+      <div className="socials">
+            <a href="https://github.com/utkuoylum" rel="noreferrer" target="_blank"><i className='bx bxl-github' ></i></a>
+            <a href="https://www.linkedin.com/in/utkuoylum/" rel="noreferrer" target="_blank" ><i className='bx bxl-linkedin-square' ></i></a>
+          </div>
     </div>
   );
 }
