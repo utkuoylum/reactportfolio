@@ -59,8 +59,8 @@ export default function Works() {
           </div>
         </div>))}
       </div>
-      <img src="../src/assets/arrow.png" className="arrow left" alt="" onClick={()=>handleClick("left")} />
-      <img src="../src/assets/arrow.png" className="arrow right" alt="" onClick={()=>handleClick("")}/>
+      <img src="/assets/arrow.png" className="arrow left" alt="" onClick={()=>handleClick("left")} />
+      <img src="/assets/arrow.png" className="arrow right" alt="" onClick={()=>handleClick("")}/>
 
     </div>
   )
