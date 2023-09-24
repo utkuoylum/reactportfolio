@@ -32,20 +32,25 @@
             align-items: center;
             justify-content: center;
             gap: 1rem;
-
-            input {
-                width: 300px;
-                height: 30px;
-                font-size: 14px;
+            accent-color: $mainColor;
+            
+            
+            input, textarea {
+                width: 80%;
+                height: 2rem;
+                font-size: 1.2rem;
+                border-radius: 8px;
+                 &:focus {
+                    outline: 1px solid $mainColor;
+                 }
             }
             textarea {
-                width: 300px;
-                height: 200px;
-                font-size: 14px;
+                height: auto;
+                resize: none;
             }
             button {
-                width: 150px;
-                height: 30px;
+                padding: 0.5rem  2rem;
+                font-size: 1.2rem;
                 color: white;
                 background-color: $mainColor;
                 border: none;

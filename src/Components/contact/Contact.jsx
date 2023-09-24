@@ -6,7 +6,8 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setMessage(true);
+    
+      setMessage(true);
   } 
   
   
@@ -16,10 +17,11 @@ export default function Contact() {
         <img src="/assets/shake.svg" alt="" />
       </div>
       <div className="right">
-        <h2>Contact</h2>
-        <form onSubmit={handleSubmit}>
-          <input type="text" placeholder="email" inputMode="email" />
-          <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+        
+        <form onSubmit={handleSubmit} netlify>
+        <h2>Write me</h2>
+          <input type="email" placeholder="email" inputMode="email" required/>
+          <textarea name="" id="" cols="30" rows="10" placeholder="message" required></textarea>
           <button type="submit">Send</button>
           {message && <span>Thanks for the message. I will reply ASAP.</span>}
         </form>

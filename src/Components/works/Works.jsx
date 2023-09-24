@@ -52,7 +52,7 @@ export default function Works() {
                 </div>
                 <h2>{item.title}</h2>
                 <p>{item.desc}</p>
-                <span>Try Online</span>
+                <span>See Online</span>
               </div>
             </div>
             <div className="right">
