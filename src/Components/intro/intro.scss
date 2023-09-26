@@ -41,11 +41,10 @@
                width: min(54rem,100%);
                
             }
-
-            @media (max-width: 768px) {
-                display: none;
-        }
-    }}
+    }
+    @media (max-width: 768px) {
+        display: none;
+}}
     .right {
         width: 100%;
         flex: 0.5;
