@@ -38,9 +38,12 @@
            height: 100%;
             img {
                height: 100%;
-               width: minmax(54rem,100%);
+               width: min(54rem,100%);
                
             }
+
+            @media (min-width: 768px) {
+                display: none;
         }
     }
     .right {
