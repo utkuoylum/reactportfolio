@@ -7,6 +7,16 @@ export default function Works() {
   const data = [
     {
       id: "1",
+      icon: "/assets/dress.png",
+      title: "Pazar Fashion Shop",
+      desc:
+        "Fashion Shopping App built with React, React Router, Redux, Tostify. Products are from  Fake Store API. Storefront, cart and checkout features. ",
+        url: "https://pazarfashionshopping.netlify.app/",
+      img:
+        "/assets/pazar.png",
+    },
+    {
+      id: "2",
       icon: "/assets/mobile.png",
       title: "Grocery App",
       desc:
@@ -16,7 +26,7 @@ export default function Works() {
         "/assets/grocery.png",
     },
     {
-      id: "2",
+      id: "3",
       icon: "/assets/globe.png",
       title: "My Bank App",
       desc:
@@ -26,7 +36,7 @@ export default function Works() {
         "/assets/mybank.png",
     },
     {
-      id: "3",
+      id: "4",
       icon: "/assets/writing.png",
       title: "Personal Website",
       desc:
@@ -36,7 +46,7 @@ export default function Works() {
         "/assets/personal.png",
     },
     {
-      id: "4",
+      id: "5",
       icon: "/assets/cat.png",
       title: "AI Image Generator",
       desc:
@@ -46,7 +56,7 @@ export default function Works() {
         "/assets/aiimage.png",
     },
     {
-      id: "5",
+      id: "6",
       icon: "/assets/drumicon.png",
       title: "Keyboard Band",
       desc:
