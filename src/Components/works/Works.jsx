@@ -15,6 +15,14 @@ export default function Works() {
     },
     {
       id: "2",
+      icon: "/assets/question.png",
+      title: "Millionaire Quiz App",
+      desc: "A Quiz App built with React. Climb the ladders giving the correct answer. ",
+      url: "https://millionaire-react-quizapp.netlify.app/",
+      img: "/assets/millionaire.png",
+    },
+    {
+      id: "3",
       icon: "/assets/mobile.png",
       title: "Grocery App",
       desc: "Grocery App built with React and API. Storefront and cart features. Stripe checkout authentication coming soon. ",
@@ -22,7 +30,7 @@ export default function Works() {
       img: "/assets/grocery.png",
     },
     {
-      id: "3",
+      id: "4",
       icon: "/assets/globe.png",
       title: "My Bank App",
       desc: "A bank application with only front-end side elements.",
@@ -30,7 +38,7 @@ export default function Works() {
       img: "/assets/mybank.png",
     },
     {
-      id: "4",
+      id: "5",
       icon: "/assets/writing.png",
       title: "Personal Website",
       desc: "A personal website for professionals made with pure JavaScript and CSS.",
@@ -38,7 +46,7 @@ export default function Works() {
       img: "/assets/personal.png",
     },
     {
-      id: "5",
+      id: "6",
       icon: "/assets/cat.png",
       title: "AI Image Generator",
       desc: "A Basic AI supported Image Generator. Just enter some prompts and images will be generated.",
@@ -46,7 +54,7 @@ export default function Works() {
       img: "/assets/aiimage.png",
     },
     {
-      id: "6",
+      id: "7",
       icon: "/assets/drumicon.png",
       title: "Keyboard Band",
       desc: "Who would not like to play some drums with keyboard?",
